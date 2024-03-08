@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #ffcc00; /* Define a primary color variable */
+  --secondary-color: #333333; /* Define a secondary color variable */
+  --border-radius: 5px; /* Define a border radius variable */
+  --button-color: #f8f5e1;
+  --darker-button-color: #e1d9c9;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem auto 0;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+/*h1 font*/
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--secondary-color);
+}
+/*input and button font*/
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary-color);
+}
+/*results font*/
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#icon {
+  height: 3rem;
+  width: auto;
+}
+
+#results-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0 solid var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  width: 18rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+}
+
+#user-input {
+  text-align: center;
+  font-size: 2rem;
+  width: 18rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  border: 0 solid var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--button-color);
+}
+
+.btn {
+  margin: 0 15px;
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: var(--border-radius);
+  border: 0 solid var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  background-color: var(--button-color);
+  font-size: 1.5rem;
+}
+
+.btn:hover,
+#user-input:hover {
+  background-color: var(--darker-button-color);
+}
+
+.btn:active,
+#user-input:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
